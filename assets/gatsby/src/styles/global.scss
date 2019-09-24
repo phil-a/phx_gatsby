@@ -1,0 +1,82 @@
+html {
+  background-color: orange;
+
+  .parallax {
+    margin: 2.5rem 2rem;
+  
+    background-image: url("https://source.unsplash.com/random/800x800");
+    
+    /* Set a specific height */
+    height: 600px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+}
+
+.navigation {
+  color: red;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-justify: inter-word;
+
+  a:link {
+    color: red;
+  }
+
+  a:visited {
+    color: coral;
+  }
+
+  a:hover {
+    color: crimson;
+  }
+
+  a:active {
+    color: gold;
+  } 
+}
+
+.header {
+  color: #111;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center; 
+}
+
+.subheader { 
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 72px;
+  text-align: center;
+}
+
+p {
+  color: #685206;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+

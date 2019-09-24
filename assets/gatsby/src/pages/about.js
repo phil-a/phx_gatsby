@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+import Navigation from "../components/navigation"
 import Header from "../components/header"
+import SubHeader from "../components/subheader"
 
 export default () => (
-  <div style={{ color: `teal` }}>
-    <Link to="/">Index</Link>
+  <div class="page" style={{ color: `teal` }}>
+    <Navigation />
     <Header headerText="About Gatsby" />
-    <p>Woweee.</p>
-    <img src="https://source.unsplash.com/random/400x200" alt="" />
+    <SubHeader subheaderText="You can't live forever." />
+    <div class="parallax"/>
   </div>
 )
