@@ -70,8 +70,46 @@ html {
   text-align: center;
 }
 
+.shadow {
+  -webkit-box-shadow: 0px 20px 0px -10px #333, 0px -20px 0px -10px #333, 20px 0px 0px -10px orange, -20px 0px 0px -10px orange, 0px 0px 0px 10px orange, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 20px 0px -10px #333, 0px -20px 0px -10px #333, 20px 0px 0px -10px orange, -20px 0px 0px -10px orange, 0px 0px 0px 10px orange, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.posts {
+  h4 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #222;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .post {
+    background-color: #222;
+    color: #eee;
+    margin: 3rem 2rem;
+    padding: 1rem;
+
+    span {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.75em;
+    }
+
+    h3 {
+      margin-left: 3rem;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    p {
+      margin-left: 3rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+
+  }
+}
+
 p {
-  color: #685206;
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 24px;

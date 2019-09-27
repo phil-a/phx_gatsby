@@ -3,12 +3,16 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import SubHeader from "../components/subheader"
+import Posts from "../components/posts"
 
 export default ({ data }) => (
-  <div class="page" style={{ color: `purple` }}>
+  <div class="page">
     <Layout>
       <Header headerText={data.site.siteMetadata.title} />
       <SubHeader subheaderText="Breathing dreams like air." />
+
+      <Posts />
+
       <div class="parallax"/>
     </Layout>
   </div>
@@ -19,6 +23,19 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
       }
     }
   }
