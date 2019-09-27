@@ -18,6 +18,8 @@ export default ({children}) => {
       <Link to="/">{data.site.siteMetadata.title}</Link>
       &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to="/about">About</Link>
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <Link to="/files">Files</Link>
     </div>
   )
 }
