@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 
 export default ({ children }) => {
 
@@ -14,6 +14,9 @@ export default ({ children }) => {
               frontmatter {
                 title
                 date(formatString: "DD MMMM, YYYY")
+              }
+              fields {
+                slug
               }
               excerpt
             }
@@ -35,6 +38,11 @@ export default ({ children }) => {
               {node.frontmatter.title}{" "}
             </h3>
             <p>{node.excerpt}</p>
+            <div className="link-button">
+              <Link to={node.fields.slug}>
+                View
+              </Link>
+            </div>
           </div>
         ))}
     </div>

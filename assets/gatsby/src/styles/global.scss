@@ -27,7 +27,7 @@ html {
 .navigation {
   color: red;
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 24px;
   margin: 0 0 24px;
   text-align: center;
@@ -104,6 +104,39 @@ html {
       margin-left: 3rem;
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
+    }
+
+    .link-button {
+      overflow: hidden;
+    }
+
+    a:link {
+      float: right;
+      margin-right: 1rem;
+      transition: 0.2s all;
+      color: orange;
+      border: 2px solid orange;
+      padding: 8px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      line-height: 24px;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+    a:visited {
+      color: coral;
+      border: 2px solid coral;
+    }
+  
+    a:hover {
+      color: crimson;
+      border: 2px solid crimson;
+    }
+  
+    a:active {
+      color: gold;
+      border: 2px solid gold;
     }
 
   }
