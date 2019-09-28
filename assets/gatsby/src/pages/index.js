@@ -10,10 +10,9 @@ export default ({ data }) => (
     <Layout>
       <Header headerText={data.site.siteMetadata.title} />
       <SubHeader subheaderText="Breathing dreams like air." />
-
-      <Posts />
-
-      <div className="parallax"/>
+      <div className="parallax">
+        <Posts />
+      </div>
     </Layout>
   </div>
 )

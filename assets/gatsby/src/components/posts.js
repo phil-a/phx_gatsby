@@ -27,8 +27,9 @@ export default ({ children }) => {
   )
 
   return (
-    <div className="posts">
+    <div className="posts-container">
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <div className="posts">
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div className="post shadow" key={node.id}>
             <span>
@@ -45,6 +46,7 @@ export default ({ children }) => {
             </div>
           </div>
         ))}
+      </div>
     </div>
   )
 }
