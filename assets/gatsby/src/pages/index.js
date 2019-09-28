@@ -6,14 +6,14 @@ import SubHeader from "../components/subheader"
 import Posts from "../components/posts"
 
 export default ({ data }) => (
-  <div class="page">
+  <div className="page">
     <Layout>
       <Header headerText={data.site.siteMetadata.title} />
       <SubHeader subheaderText="Breathing dreams like air." />
 
       <Posts />
 
-      <div class="parallax"/>
+      <div className="parallax"/>
     </Layout>
   </div>
 )

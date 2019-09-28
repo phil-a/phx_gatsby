@@ -14,7 +14,7 @@ export default ({children}) => {
     `
   )
   return (
-    <div class="navigation">
+    <div className="navigation">
       <Link to="/">{data.site.siteMetadata.title}</Link>
       &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to="/about">About</Link>

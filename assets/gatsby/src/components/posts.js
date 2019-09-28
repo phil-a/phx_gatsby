@@ -24,10 +24,10 @@ export default ({ children }) => {
   )
 
   return (
-    <div class="posts">
+    <div className="posts">
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div class="post shadow" key={node.id}>
+          <div className="post shadow" key={node.id}>
             <span>
               {node.frontmatter.date}
             </span>
